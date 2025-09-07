@@ -10,7 +10,7 @@ You can install the library either from PyPI or from source:
 
 From PyPI
 
-```pip install Neuro_EEG_Control``
+```pip install Neuro_EEG_Control```
 
 
 From source
@@ -58,7 +58,8 @@ lowGamma, midGamma
 You can access EEG metrics in two different ways:
 
 1. Callbacks (event-driven)
-```from time import sleep
+```
+from time import sleep
 
 def attention_callback(value):
     print("Attention:", value)
@@ -82,7 +83,8 @@ while True:
         print("High meditation detected, stopping...")
         neuropy.stop()
         break
-    sleep(0.2)```
+    sleep(0.2)
+```
 
 ## ⚙️ Compatibility
 
