@@ -1,16 +1,16 @@
-Neuro_EEG_Control
+## Neuro_EEG_Control
 
 Neuro_EEG_Control is a Python library that enables seamless communication with NeuroSky MindWave EEG headsets, allowing you to capture, process, and respond to brainwave data in real time.
 
 This package is built on NeuroSky’s official MindWave communication protocol and has been validated with the MindWave Mobile device. It offers both callback-driven events and direct property access for EEG metrics such as attention, meditation, and frequency band power values.
 
-📦 Installation
+## 📦 Installation
 
 You can install the library either from PyPI or from source:
 
 From PyPI
 
-pip install Neuro_EEG_Control
+```pip install Neuro_EEG_Control``
 
 
 From source
@@ -21,21 +21,21 @@ Extract the archive and navigate into the project directory.
 
 Run:
 
-python setup.py install
+```python setup.py install```
 
 🚀 Quick Start
 Import and Initialize
-from Neuro_EEG_Control import NeuroPy
+```from Neuro_EEG_Control import NeuroPy```
 
 # Create an instance (port and baudrate can be passed if needed)
-neuropy = NeuroPy()
+```neuropy = NeuroPy()```
 
 Start & Stop Streaming
-neuropy.start()   # begin streaming EEG data
+```neuropy.start()   # begin streaming EEG data
 # ...
 neuropy.stop()    # gracefully stop the connection
-
-📊 Available EEG Data
+```
+## 📊 Available EEG Data
 
 The following variables are exposed:
 
@@ -53,12 +53,12 @@ lowBeta, highBeta
 
 lowGamma, midGamma
 
-🖥️ Accessing Data
+## 🖥️ Accessing Data
 
 You can access EEG metrics in two different ways:
 
 1. Callbacks (event-driven)
-from time import sleep
+```from time import sleep
 
 def attention_callback(value):
     print("Attention:", value)
@@ -82,15 +82,15 @@ while True:
         print("High meditation detected, stopping...")
         neuropy.stop()
         break
-    sleep(0.2)
+    sleep(0.2)```
 
-⚙️ Compatibility
+## ⚙️ Compatibility
 
 Python 2.7
 
 Python 3.x
 
-⚠️ Notes
+## ⚠️ Notes
 
 Tested with NeuroSky MindWave Mobile. Compatibility with other models may vary.
 
@@ -99,11 +99,11 @@ For headset model differences, refer to NeuroSky’s official documentation
 
 Another third-party library exists, but it has not been tested alongside this one.
 
-📚 Resources
+## 📚 Resources
 
 Original developer blog post: lihashgnis.blogspot.in
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
